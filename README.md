@@ -31,7 +31,7 @@ Este projeto disponibiliza informações sobre os usuários para os visitantes d
 
 ## 🔖 Layout
 
-Você pode visualizar o projeto através [DESSE LINK](https://nesdark.github.io//nlw-figurinha).
+Você pode visualizar o projeto através [DESSE LINK](https://nesdark.github.io/nlw-figurinha/).
 
 ## :memo: Licença
 
