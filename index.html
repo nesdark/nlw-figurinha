@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLW Copa - Figurinha</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img .logo src="./src/logo.svg" alt="Logo NLW Copa" />
+      </header>
+      <main>
+        <input
+          type="button"
+          value="Novo Cartão"
+          class="button"
+          onclick="Modal.open()"
+        />
+        <div id="cards">
+          <div class="card">
+            <div class="user">
+              <img src="./src/user.png" alt="Imagem do Christian" />
+            </div>
+            <div class="bottom">
+              <h3>Christian Henrique</h3>
+              <p>WEB Developer</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal">
+      <form action="">
+        <div class="container">
+          <label class="sr-only" for="name">Nome</label>
+          <input type="text" id="name" required placeholder="Name" />
+
+          <label class="sr-only" for="description">Nome</label>
+          <input
+            type="text"
+            id="description"
+            required
+            placeholder="Description"
+          />
+        </div>
+
+        <label class="sr-only" for="description">Nome</label>
+        <input
+          type="text"
+          id="trail"
+          required
+          placeholder="Trilha: Explorer/Ignite"
+          pattern="/(Explorer)|(explorer)|(Ignite)|(ignite)"
+        />
+        <br />
+
+        <div class="container">
+          <a id="cancel" onclick="Modal.close()">Cancel</a>
+          <button
+            id="submit"
+            type="submit"
+            onclick="generateCard(), Modal.close()"
+          >
+            Continue
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
